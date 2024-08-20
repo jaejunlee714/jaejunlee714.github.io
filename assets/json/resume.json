@@ -51,7 +51,7 @@
       "location": "Daejeon, Korea",
       "url": "https://kaist.ac.kr/",
       "area": "School of Computing (double major: Department of Mathematical Sciences)",
-      "studyType": "Bachelor of Science",
+      "studyType": "B.S.",
       "startDate": "2017-02-27",
       "endDate": "2021-08-29"
     },
@@ -60,7 +60,7 @@
       "location": "Daejeon, Korea",
       "url": "https://kaist.ac.kr/",
       "area": "School of Computing",
-      "studyType": "Master of Science (Advisor: Joyce Jiyoung Whang)",
+      "studyType": "M.S. (Advisor: Joyce Jiyoung Whang)",
       "startDate": "2021-08-30",
       "endDate": "2023-02-26"
     },
@@ -69,7 +69,7 @@
       "location": "Daejeon, Korea",
       "url": "https://kaist.ac.kr/",
       "area": "School of Computing",
-      "studyType": " Doctor of Philosophy (Advisor: Joyce Jiyoung Whang)",
+      "studyType": "Ph.D. (Advisor: Joyce Jiyoung Whang)",
       "startDate": "2023-02-27"
     }
   ]/*,

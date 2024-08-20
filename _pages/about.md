@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='https://bdi-lab.kaist.ac.kr'>Big Data Intelligence Lab</a>, School of Computing, KAIST
+subtitle: 
 
 profile:
   align: right
@@ -12,7 +12,7 @@ profile:
     # <p>123 your address street</p>
     # <p>Your City, State 12345</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
