@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: conference and journal publications in reversed chronological order. <br> † Equal Contribution * Corresponding Author
+description: † Equal Contribution * Corresponding Author
 nav: true
 nav_order: 2
 ---
