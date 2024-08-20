@@ -18,6 +18,6 @@ all_papers: true
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, I'm Jaejun Lee, a PhD Student of School of Computing at KAIST. I'm a member of the <a href='https://bdi-lab.kaist.ac.kr'>Big Data Intelligence lab</a> led by Professor Joyce Jiyoung Whang. 
+Hi, I'm Jaejun Lee, a PhD Student of School of Computing at KAIST. I'm a member of the <a href='https://bdi-lab.kaist.ac.kr'>Big Data Intelligence lab</a> led by <a href='https://bdi-lab.kaist.ac.kr/down/joyce_CV_public.pdf'>Professor Joyce Jiyoung Whang</a>. 
 
 My current research interests are graph machine learning, graph neural networks, and knowledge graphs.
