@@ -1,0 +1,1 @@
+const sh=require("shelljs"),upath=require("upath"),destPath=upath.resolve(upath.dirname(__filename),"../dist");sh.rm("-rf",`${destPath}/*`);

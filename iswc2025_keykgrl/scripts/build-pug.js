@@ -1,0 +1,1 @@
+"use strict";function _processFile(e){!e.match(/\.pug$/)||e.match(/include/)||e.match(/mixin/)||e.match(/\/pug\/layouts\//)||renderPug(e)}const upath=require("upath"),sh=require("shelljs"),renderPug=require("./render-pug"),srcPath=upath.resolve(upath.dirname(__filename),"../src");sh.find(srcPath).forEach(_processFile);

@@ -1,0 +1,1 @@
+"use strict";const fs=require("fs"),upath=require("upath"),sh=require("shelljs");module.exports=function(){const e=upath.resolve(upath.dirname(__filename),"../src/assets"),s=upath.resolve(upath.dirname(__filename),"../dist/.");sh.cp("-R",e,s)};
