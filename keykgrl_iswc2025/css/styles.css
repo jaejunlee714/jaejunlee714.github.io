@@ -10890,12 +10890,8 @@ section {
 }
 
 .presenter-text {
-  margin-left: 5px;
+  margin-left: 20px;
   margin-top: 0;
   font-size: 1.25rem;
   font-weight: 300;
-}
-
-.circle-image {
-  clip-path: circle(25%)
 }
