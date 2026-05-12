@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Knowledge Discovery with Knowledge Graphs: From Structual Embeddings to Generative Reasoning" />
+        <meta name="author" content="Joyce Jiyoung Whang" />
+        <title>KD-KG Tutorial - KDD 2026</title>
+        <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">KD-KG Tutorial</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#abstract">Abstract</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#presenter">Presenter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#prerequisites">Prerequisites</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-primary bg-custom text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Knowledge Discovery with Knowledge Graphs: From Structual Embeddings to Generative Reasoning (KD-KG)</h1>
+                <p class="lead">Lecture-Style Tutorial<br>
+                    32nd SIGKDD Conference on Knowledge Discovery and Data Mining (<a href="https://kdd2026.kdd.org//" style="color:white">KDD 2026</a>)<br>
+                    Room , International Convention Center Jeju (ICC Jeju), Jeju, Korea<br>
+                    August  09:00AM-12:00PM</p>
+            </div>
+        </header>
+        <section id="abstract">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>Abstract</h1>
+                        <p class="text">Knowledge graphs provide a structured modeling of human knowledge, 
+                            which is essential to many modern knowledge discovery systems. Knowledge graph 
+                            embedding and knowledge graph representation learning techniques convert entities 
+                            and relations into feature vectors, thereby facilitating their effective integration 
+                            into contemporary data mining and machine learning applications. Along with these 
+                            structural embedding approaches, recent studies on knowledge graphs also explore their 
+                            applications with large language models, such as improving the Retrieval-Augmented Generation (RAG) 
+                            based on the graph-structured data, referred to as GraphRAG. This tutorial provides a review of seminal 
+                            works in knowledge graph representation learning, including knowledge graph embedding with multimodal data, 
+                            inductive reasoning on knowledge graphs, knowledge graph foundation models, and representation learning on 
+                            hyper-relational knowledge graphs. Furthermore, the tutorial also investigates various ways to use 
+                            knowledge graphs with large language models. This Lecture-Style Tutorial consists of six lectures, 
+                            including some demonstrations of representative knowledge graph representation learning models.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light" id="presenter">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>Presenters</h1>
+                        <section style="padding-top: 2rem; padding-bottom: 0rem;">
+                        <h2>Main Tutor</h2>
+                        <div class="presenter-image">
+                        <img src="./assets/profile_joyce.png" alt="Joyce Jiyoung Whang" style="height: 280px; width: auto; clip-path: ellipse(50% 40% at 50% 45%);"/>
+                        <div>
+                            <h3 style="margin-left: 25px; margin-top: 0;">Joyce Jiyoung Whang</h3>
+                        <p class="presenter-text">
+                            Joyce Jiyoung Whang is an associate professor at the School of 
+                            Computing at KAIST, where she has led the <a href="https://bdi-lab.kaist.ac.kr">Big Data Intelligence Lab</a> since July 2020. 
+                            Before joining KAIST, she was an assistant professor of Computer Science and Engineering 
+                            at Sungkyunkwan University (SKKU) from March 2016 to June 2020. She received her Ph.D. degree 
+                            in Computer Science from the University of Texas at Austin in December 2015 under the supervision of 
+                            Professor Inderjit Dhillon. She serves as Area Chair for ICML, NeurIPS, and ICLR. She is an associate 
+                            editor for ACM Transactions on Knowledge Discovery from Data (TKDD) and a workshop chair for KDD 2026.</p>
+                        </div>
+                        </div>
+                        </section>
+                        <section style="padding-top: 2rem; padding-bottom: 0rem;">
+                        <h2>Assistent Tutors</h2>
+                        <div class="presenter-image">
+                        <img src="./assets/profile_jj.jpg" alt="Jaejun Lee" style="height: 280px; width: auto; clip-path: ellipse(50% 40% at 50% 45%);"/>
+                        <div>
+                            <h3 style="margin-left: 25px; margin-top: 0;">Jaejun Lee</h3>
+                        <p class="presenter-text">Jaejun Lee is a last-year Ph.D. student at the School of Computing at KAIST, 
+                            where he is a member of the Big Data Intelligence Lab advised by Professor Joyce Jiyoung Whang. 
+                            He serves as a reviewer for major machine learning and data mining conferences, including ICML, KDD, ARR, 
+                            and NeurIPS. His research expertise lies in knowledge graph representation learning, graph neural networks, 
+                            multimodal knowledge graphs, and their theoretical foundations. He contributed to the KeyKGRL tutorial held at ISWC 2025,
+                             where he led the hands-on practice sessions. E-mail address is jjlee98@kaist.ac.kr.</p>
+                        </div>
+                        </div>
+                        </section>
+                        <div class="presenter-image">
+                            <img src="./assets/profile_cy.jpg" alt="Chanyoung Chung" style="height: 280px; width: auto; clip-path: ellipse(50% 40% at 50% 45%);"/>
+                            <div>
+                                <h3 style="margin-left: 25px; margin-top: 0;">Chanyoung Chung</h3>
+                            <p class="presenter-text">Chanyoung Chung is a last-year Ph.D. student in the School of Computing at KAIST 
+                                and a member of the Big Data Intelligence Lab led by Professor Joyce Jiyoung Whang. His research interests 
+                                primarily include graph machine learning, graph neural networks, and knowledge graphs. He has published papers in top-tier 
+                                conferences, including AAAI, KDD, and SIGIR, and has served as a reviewer for various conferences and journals, including AAAI, 
+                                ARR, SIGIR, TKDE, TNNLS, and TPAMI. E-mail address is chanyoung.chung@kaist.ac.kr.</p>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="schedule">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>Schedule</h1>
+                        <p class="lead">
+                        <table class="table-custom">
+                            <thead>
+                                <tr>
+                                    <th>Tutorial Time</th>
+                                    <th>Presenter</th>
+                                    <th>Program</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>9:00-9:30</td>
+                              <td>Joyce Jiyoung Whang</td>
+                              <td>[Lecture 1] Introduction to Knowledge Graphs and their Real-World Applications<a href="./notes/[Lecture0]Introduction.pdf">[PDF]</a></td>
+                            </tr>
+                            <tr>
+                                <td>9:30-10:00</td>
+                                <td>Joyce Jiyoung Whang</td>
+                                <td>[Lecture 2] Knowledge Graph Embedding with Multimodal Data <a href="./notes/[Lecture1]KG_Embedding_with_Multimodal_Data.pdf">[PDF]</a></td>
+                            </tr>
+                            <tr>
+                                <td>10:00-10:30</td>
+                                <td>Joyce Jiyoung Whang</td>
+                                <td>[Lecture 3] Inductive Reasoning on Knowledge Graphs <a href="./notes/[Lecture2]Inductive_Reasoning_on_KGs.pdf">[PDF]</a></td>
+                            </tr>
+                            <tr>
+                                <td>10:30-11:00</td>
+                                <td>Joyce Jiyoung Whang</td>
+                                <td>[Lecture 4] Hands-on Practice of Inductive KGRL</a> <a href="./notes/[Exercise1]Hands-on_Practice_of_an_Inductive_KGRL_Method.pdf">[PDF]</a></td>
+                            </tr>
+                            <tr>
+                                <td>11:00-11:30</td>
+                                <td>Jaejun Lee</td>
+                                <td>[Lecture 5] Representation Learning on Hyper-relational Knowledge Graphs <a href="./notes/[Lecture3]KG_Foundation_Models.pdf">[PDF]</a></td>
+                            </tr>
+                            <tr>
+                                <td>11:30-12:00</td>
+                                <td>Chanyoung Chung</td>
+                                <td>[Lecture 6] Knowledge Graphs with Large Language Models & GraphRAG <a href="./notes/[Lecture4]Representation_Learning_on_HKGs.pdf">[PDF]</a></td>
+                            </tr>
+                        </tbody>
+                          </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light" id="program">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>Program</h1>
+                        <section style="padding-top: 2rem; padding-bottom: 0rem;">
+                            <h4>Lecture 1: Introduction to Knowledge Graphs and their Real-World Applications</h4>
+                            <p class="text">A gentle introduction to knowledge graphs (KGs) is presented with their real-world applications, 
+                                such as Google’s KG-powered search, Palantir’s ontology-powered AI techniques, Amazon’s Neptune service, 
+                                and Meta’s Graph API. Also, the concept of graph embedding and classical knowledge graph embedding models, 
+                                including TransE, RotatE, DistMult, and ANALOGY, are reviewed.</p>
+                        </section>
+                        <section style="padding-top: 2rem; padding-bottom: 0rem;">
+                            <h4>Lecture 2: Knowledge Graph Embedding with Multimodal Data</h4>
+                            <p class="text">We discuss knowledge graph embedding, in which entities or relations are accompanied by their textual descriptions, 
+                                numeric data, and visual features. Multimodal KG embedding methods integrate various visual, textual, or numerical data into KG 
+                                embedding vectors, enabling them to encode not only the structural information of KGs but also additional multimodal features. 
+                                Methods including IKRL, LiteralE, RSME, MKGformer, OTKGE, MoSE, IMF, VISTA, MoMoK, are discussed.</p>
+                        </section>
+                        <section style="padding-top: 2rem; padding-bottom: 0rem;">
+                            <h4>Lecture 3: Inductive Reasoning on Knowledge Graphs</h4>
+                            <p class="text">Inductive Knowledge Graph Representation Learning (KGRL) methods allow a model to compute representations for a new 
+                                inference KG that differs from the training KG, enabling the prediction of missing triplets in the inference KG, which may include 
+                                new entities and relations appearing at inference time. This is distinguished from a transductive learning setting, where the entity 
+                                and relation representation vectors are learned based on a fixed KG, and only new combinations of them are considered for KG completion 
+                                at inference time. This lecture discusses seminal works on inductive KGRL methods, including NeuralLP, DRUM, GraIL, NBFNet, RED-GNN, RMPI, InGram, AdaProp, and KnowFormer.</p>
+                        </section>
+                        <section style="padding-top: 2rem; padding-bottom: 0rem;">
+                            <h4>Lecture 4: Foundation Models for Knowledge Graph Reasoning</h4>
+                            <p class="text">The inductive learning paradigm on KGRL extends to foundation models. While inductive KGRL methods and KG foundation models 
+                                share similar objectives in generalizing their abilities to unseen KGs, KG foundation models further extend these capabilities to arbitrary KGs. 
+                                KG foundation models are pre-trained on diverse KGs and accommodate varying underlying distributions across them, allowing the model to generalize 
+                                to any KG. This lecture covers recently proposed KG foundation models, such as ULTRA, TRIX, and KG-ICL.</p>
+                        </section>
+                        <section style="padding-top: 2rem; padding-bottom: 0rem;">
+                            <h4>Lecture 5: Representation Learning on Hyper-Relational KGs</h4>
+                            <p class="text">Although KGs represent facts as triplets, this format often oversimplifies complex information, motivating the extension to hyperrelational KGs (HKGs). 
+                                In an HKG, a triplet is extended to a hyperrelational fact, where a set of qualifiers is attached to a triplet to represent auxiliary information, and a qualifier is a 
+                                pair of a relation and an entity. Learning representations on HKGs is more challenging due to the complex structure among triplets and qualifiers, as well as the entity-level, 
+                                relation-level, and fact-level connectivity. This lecture introduces HKG representation learning methods, including HINGE, StarE, GRAN, QBLP, HAHE, ShrinkE, HyNT, HyperFormer, and MAYPL.</p>
+                        </section>
+                        <section style="padding-top: 2rem; padding-bottom: 0rem;">
+                        <h4>Lecture 6: Knowledge Graphs with Large Language Models and GraphRAG</h4>
+                        <p class="text">Recently, knowledge graphs are often used with large language models to ground knowledge or improve question-answering performance, 
+                            e.g., via GraphRAG. We discuss the integration of Knowledge Graphs and LLMs, with a particular focus on the emerging paradigm of GraphRAG 
+                            (Graph-based Retrieval-Augmented Generation). We will explore how structural knowledge can be seamlessly injected into the generative pipeline 
+                            to enhance factual accuracy and multi-hop reasoning. In particular, we introduce GraphRAG, LightRAG, HippoRAG, HippoRAG2, RAG-Anything, and KG<sup>2</sup>RAG.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="prerequisites">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>Target Audience and Prerequisites</h1>
+                        <section style="padding-top: 2rem; padding-bottom: 0rem;">
+                            <p class="text">This tutorial’s scope ranges from introductory to specialized; it provides foundational concepts in KG-related techniques 
+                                while also covering specialized topics, including recent research directions such as multimodal, inductive, foundation, and hyper-relational methods, 
+                                as well as GraphRAG. The level is beginner to intermediate, designed for participants with a basic background in machine learning and data mining. 
+                                This tutorial is intended for researchers and industry professionals working in or entering the fields of knowledge representation and any KG-related topics. 
+                                The content is suitable for participants who have a basic understanding of machine learning concepts and programming skills, but no prior experience with KGs or representation learning is required.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Big Data Intelligence Lab@KAIST, 2026</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
