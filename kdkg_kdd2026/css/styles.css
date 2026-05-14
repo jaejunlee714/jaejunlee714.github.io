@@ -10905,3 +10905,17 @@ section {
 .secure-email { cursor: default; }
 .secure-email::after { content: attr(data-user) "@" attr(data-domain); -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-user-drag: none;}
 
+.e-line {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.e-svg {
+  height: 1em;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+}
