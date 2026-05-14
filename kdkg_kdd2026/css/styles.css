@@ -103,10 +103,6 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none
 }
 
 hr {
@@ -10905,3 +10901,7 @@ section {
   font-weight: 300;
   text-align: justify;
 }
+
+.secure-email { cursor: default; }
+.secure-email::after { content: attr(data-user) "@" attr(data-domain); -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-user-drag: none;}
+
