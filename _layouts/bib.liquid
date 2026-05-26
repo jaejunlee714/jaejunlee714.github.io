@@ -155,6 +155,7 @@
         {% capture entrytype %}<em>{{ entry.booktitle }}</em>{% endcapture %}
       {% else %}
         {% capture entrytype %}<em>To appear in {{ entry.booktitle }}</em>{% endcapture %}
+      {% endif %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
