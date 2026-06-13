@@ -55,8 +55,8 @@
 - title: Tutorials
   type: item
   contents:
-    - Assistant Tutor of the Tutorial &quot;Knowledge Discovery with Knowledge Graphs&#58; From Structural Embeddings to Generative Reasoning (KnowKG)&quot;
-    - Assistant Tutor of the Tutorial &quot;Key Facets in Modern Knowledge Graph Representation Learning (KeyKGRL)&quot;
+    - &quot;Knowledge Discovery with Knowledge Graphs&#58; From Structural Embeddings to Generative Reasoning (KnowKG)&quot;, KDD 2026, Assistant Tutor.
+    - &quot;Key Facets in Modern Knowledge Graph Representation Learning (KeyKGRL)&quot;, ISWC 2025, Assistant Tutor.
 
 - title: Peer Review
   type: item
