@@ -1336,6 +1336,8 @@ h1.post-title a.float-right:hover i.fa-file-pdf {
 }
 
 .cv .time_table .title,
-.cv table td h6.title {
+.cv table td h6.title,
+.cv .time_table .title a,
+.cv table td h6.title a {
   color: var(--global-theme-color) !important;
 }
