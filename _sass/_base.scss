@@ -1304,3 +1304,24 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+.publications .bibliography li {
+  /* 배경은 기존 테마를 따르고, 테두리만 반투명한 회색으로 설정하여 다크모드에도 대응 */
+  border: 1px solid rgba(128, 128, 128, 0.3); 
+  border-radius: 10px; 
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 마우스 오버 시 카드가 살짝 떠오르는 효과 */
+.publications .bibliography li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 카드 내부 텍스트, 이미지 정렬 보정 */
+.publications .bibliography li .row {
+  margin: 0;
+}
