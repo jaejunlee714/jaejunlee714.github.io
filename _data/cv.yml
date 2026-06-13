@@ -56,10 +56,19 @@
   - Ji Ho Kwak<sup>&dagger;</sup>, <strong>Jaejun Lee<sup>&dagger;</sup></strong>, Sungho Jo, and Joyce Jiyoung Whang, Semantic Grasping via a Knowledge Graph of Robotic Manipulation&#58; A Graph Representation Learning Approach, RA-L 2022.
 
 - title: Teaching Experience
-  type: item
+  type: time_table
   contents:
-  - Assistant Tutor of <em>Knowledge Discovery with Knowledge Graphs&#58; From Structural Embeddings to Generative Reasoning(KnowKG), KDD 2026</em>.
-  - Assistant Tutor of <em>Key Facets in Modern Knowledge Graph Representation Learning (KeyKGRL), ISWC 2025</em>.
+    - title: Assistant Tutor
+      year: 2026
+      location: KDD
+      maindescription:
+        - "Tutorial: <i>Knowledge Discovery with Knowledge Graphs: From Structural Embeddings to Generative Reasoning (KnowKG)</i>"
+
+    - title: Assistant Tutor
+      year: 2025
+      location: ISWC
+      maindescription:
+        - "Tutorial: <i>Key Facets in Modern Knowledge Graph Representation Learning (KeyKGRL)</i>"
 
 - title: Peer Review
   type: item
