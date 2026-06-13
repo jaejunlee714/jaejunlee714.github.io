@@ -43,18 +43,18 @@ p.location {
 }
 
 i.iconlocation {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   font-size: 0.8rem;
 }
 
 i.iconinstitution {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   font-size: 0.95rem;
   margin-right: 0.3rem;
 }
 
 i.icondepartment {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   font-size: 0.8rem;
   margin-right: 0.3rem;
 }
@@ -116,7 +116,7 @@ td.list-group-category {
 
 td.list-group-category-icon {
   font-size: 0.8rem;
-  color: var(--global-text-color);
+  color: var(--global-theme-color);
   width: 1.4rem;
   padding-right: 0.4rem;
 }
