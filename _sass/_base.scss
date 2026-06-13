@@ -1334,10 +1334,3 @@ h1.post-title a.float-right i.fa-file-pdf {
 h1.post-title a.float-right:hover i.fa-file-pdf {
   color: var(--global-theme-color) !important; /* 마우스 올렸을 때 색상 */
 }
-
-.cv .time_table .title,
-.cv table td h6.title,
-.cv .time_table .title a,
-.cv table td h6.title a {
-  color: var(--global-theme-color) !important;
-}
