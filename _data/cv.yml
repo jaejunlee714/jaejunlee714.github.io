@@ -39,7 +39,11 @@
       - <a href="https://mathsci.kaist.ac.kr">Double Major&#58; Department of Mathematical Sciences</a> <br>
       - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
       
-- title: Publications
+- title: |
+    Publications
+    <p style="font-size: 0.8rem; color: var(--global-text-color-light);">
+      <sup>&dagger;</sup> Equal contribution
+    </p>
   type: enumerate
   contents:
   - <strong>Jaejun Lee</strong> and Joyce Jiyoung Whang, Learn When and Where to Connect&#58; Adaptive Virtual Nodes for Dynamic Message Passing on Graphs, KDD 2026.
