@@ -40,6 +40,8 @@ layout: default
                 {% include cv/list_groups.liquid %}
               {% elsif entry.type == 'enumerate' %}
                 {% include cv/enumerate.liquid %}
+              {% elsif entry.type == 'item' %}
+                {% include cv/item.liquid %}
               {% else %}
                 {{ entry.contents }}
               {% endif %}
