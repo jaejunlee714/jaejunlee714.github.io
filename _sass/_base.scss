@@ -1334,3 +1334,9 @@ h1.post-title a.float-right i.fa-file-pdf {
 h1.post-title a.float-right:hover i.fa-file-pdf {
   color: var(--global-theme-color) !important; /* 마우스 올렸을 때 색상 */
 }
+
+img.preview.medium-zoom-image--opened {
+  max-width: 60vw !important;  /* 화면 너비의 60% (숫자를 줄이거나 키워서 맞추세요) */
+  max-height: 60vh !important; /* 화면 높이의 60% */
+  object-fit: contain !important; /* 이미지 비율 깨짐 방지 */
+}
