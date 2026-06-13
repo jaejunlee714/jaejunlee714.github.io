@@ -33,7 +33,7 @@
       - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
       
 - title: Publications
-  type: list
+  type: enumerate
   contents:
   - Jaejun Lee and Joyce Jiyoung Whang, Learn When and Where to Connect&#58; Adaptive Virtual Nodes for Dynamic Message Passing on Graphs, KDD 2026.
   - Jaejun Lee, Seheon Kim, and Joyce Jiyoung Whang, Generative Representation Learning on Hyper-relational Knowledge Graphs via Masked Discrete Diffusion, ICML 2026.
