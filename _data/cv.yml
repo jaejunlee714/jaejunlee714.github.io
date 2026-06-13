@@ -40,8 +40,7 @@
       - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
       
 - title: |
-    Publications
-    <p style="font-size: 0.8rem; color: var(--global-text-color-light);">
+    Publications <p style="font-size: 0.8rem; color: var(--global-text-color-light);">
       <sup>&dagger;</sup> Equal contribution
     </p>
   type: enumerate
