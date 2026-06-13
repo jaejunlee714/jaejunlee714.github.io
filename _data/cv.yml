@@ -61,3 +61,11 @@
   contents:
   - Assistant Tutor of <em>Knowledge Discovery with Knowledge Graphs&#58; From Structural Embeddings to Generative Reasoning(KnowKG), KDD 2026</em>.
   - Assistant Tutor of <em>Key Facets in Modern Knowledge Graph Representation Learning (KeyKGRL), ISWC 2025</em>.
+
+- title: Reviewer
+  type: item
+  contents:
+  - Conferences&#58; NeurIPS, ICML, KDD.
+  - Journals&#58; TKDD, TMLR.
+  - Others&#58; ACL ARR.
+  
