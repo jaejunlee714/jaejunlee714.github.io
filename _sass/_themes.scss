@@ -21,6 +21,7 @@
   --global-back-to-top-text-color: #{$white-color};
   --global-newsletter-bg-color: #{$white-color};
   --global-newsletter-text-color: #{$black-color};
+  --badge-background-color: ##e3f2fd;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -85,6 +86,7 @@ html[data-theme="dark"] {
   --global-back-to-top-text-color: #{$black-color};
   --global-newsletter-bg-color: #{$grey-color-light};
   --global-newsletter-text-color: #{$grey-color-dark};
+  --badge-background-color: #1e3a5f;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
