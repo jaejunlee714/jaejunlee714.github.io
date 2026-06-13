@@ -11,21 +11,30 @@
 - title: Education
   type: time_table
   contents:
-    - title: <a href="https://bdi-lab.kaist.ac.kr" style="color: #1976d2;">Ph.D. (Advisor&#58; Joyce Jiyoung Whang)</a>
+    - title: |
+        <a href="https://bdi-lab.kaist.ac.kr" style="color: #1976d2;">
+          Ph.D. (Advisor&#58; Joyce Jiyoung Whang)
+        </a>
       year: 2023.02-present
       location: Daejeon, Korea
       maindescription:
       - <a href="https://cs.kaist.ac.kr">School of Computing</a> <br>
       - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
 
-    - title: <a href="https://bdi-lab.kaist.ac.kr" style="color: #1976d2;">M.S. (Advisor&#58; Joyce Jiyoung Whang)</a>
+    - title: | 
+        <a href="https://bdi-lab.kaist.ac.kr" style="color: #1976d2;">
+          M.S. (Advisor&#58; Joyce Jiyoung Whang)
+        </a>
       year: 2021.08-2023.02
       location: Daejeon, Korea
       maindescription:
       - <a href="https://cs.kaist.ac.kr">School of Computing</a> <br>
       - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
 
-    - title: <a href="https://cs.kaist.ac.kr" style="color: #1976d2;">B.S., School of Computing</a>
+    - title: |
+        <a href="https://cs.kaist.ac.kr" style="color: #1976d2;">
+          B.S., School of Computing
+        </a>
       year: 2017.02-2021.08
       location: Daejeon, Korea
       maindescription:
