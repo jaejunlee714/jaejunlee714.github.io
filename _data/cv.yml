@@ -35,12 +35,12 @@
 - title: Publications
   type: enumerate
   contents:
-  - Jaejun Lee and Joyce Jiyoung Whang, Learn When and Where to Connect&#58; Adaptive Virtual Nodes for Dynamic Message Passing on Graphs, KDD 2026.
-  - Jaejun Lee, Seheon Kim, and Joyce Jiyoung Whang, Generative Representation Learning on Hyper-relational Knowledge Graphs via Masked Discrete Diffusion, ICML 2026.
-  - Jaejun Lee and Joyce Jiyoung Whang, Structure Is All You Need&#58; Structural Representation Learning on Hyper-Relational Knowledge Graphs, ICML 2025.
-  - Minsung Hwang, Jaejun Lee, and Joyce Jiyoung Whang, Stability and Generalization Capability of Subgraph Reasoning Models for Inductive Knowledge Graph Completion, ICML 2025.
-  - Jaejun Lee, Minsung Hwang, and Joyce Jiyoung Whang, PAC-Bayesian Generalization Bounds for Knowledge Graph Representation Learning, ICML 2024.
-  - Jaejun Lee, Chanyoung Chung, Hochang Lee, Sungho Jo, and Joyce Jiyoung Whang, VISTA&#58; Visual-Textual Knowledge Graph Representation Learning, EMNLP Findings 2023.
-  - Chanyoung Chung, Jaejun Lee, and Joyce Jiyoung Whang, Representation Learning on Hyper-Relational and Numeric Knowledge Graphs with Transformers, KDD 2023.
-  - Jaejun Lee, Chanyoung Chung, and Joyce Jiyoung Whang, InGram&#58; Inductive Knowledge Graph Embedding via Relation Graphs, ICML 2023.
-  - Ji Ho Kwak, Jaejun Lee, Sungho Jo, and Joyce Jiyoung Whang, Semantic Grasping via a Knowledge Graph of Robotic Manipulation&#58; A Graph Representation Learning Approach, RA-L 2022.
+  - <strong>Jaejun Lee</strong> and Joyce Jiyoung Whang, Learn When and Where to Connect&#58; Adaptive Virtual Nodes for Dynamic Message Passing on Graphs, KDD 2026.
+  - <strong>Jaejun Lee</strong>, Seheon Kim, and Joyce Jiyoung Whang, Generative Representation Learning on Hyper-relational Knowledge Graphs via Masked Discrete Diffusion, ICML 2026.
+  - <strong>Jaejun Lee</strong> and Joyce Jiyoung Whang, Structure Is All You Need&#58; Structural Representation Learning on Hyper-Relational Knowledge Graphs, ICML 2025.
+  - Minsung Hwang, <strong>Jaejun Lee</strong>, and Joyce Jiyoung Whang, Stability and Generalization Capability of Subgraph Reasoning Models for Inductive Knowledge Graph Completion, ICML 2025.
+  - <strong>Jaejun Lee</strong>, Minsung Hwang, and Joyce Jiyoung Whang, PAC-Bayesian Generalization Bounds for Knowledge Graph Representation Learning, ICML 2024.
+  - <strong>Jaejun Lee</strong>, Chanyoung Chung, Hochang Lee, Sungho Jo, and Joyce Jiyoung Whang, VISTA&#58; Visual-Textual Knowledge Graph Representation Learning, EMNLP Findings 2023.
+  - Chanyoung Chung, <strong>Jaejun Lee</strong>, and Joyce Jiyoung Whang, Representation Learning on Hyper-Relational and Numeric Knowledge Graphs with Transformers, KDD 2023.
+  - <strong>Jaejun Lee</strong>, Chanyoung Chung, and Joyce Jiyoung Whang, InGram&#58; Inductive Knowledge Graph Embedding via Relation Graphs, ICML 2023.
+  - Ji Ho Kwak, <strong>Jaejun Lee</strong>, Sungho Jo, and Joyce Jiyoung Whang, Semantic Grasping via a Knowledge Graph of Robotic Manipulation&#58; A Graph Representation Learning Approach, RA-L 2022.
