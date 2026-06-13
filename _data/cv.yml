@@ -34,7 +34,4 @@
       
 - title: Publications
   type: list
-  contents:
-    - title: Learn When and Where to Connect: Adaptive Virtual Nodes for Dynamic Message Passing on Graphs
-      authors: Jaejun Lee and Joyce Jiyoung Whang
-      venue: KDD 2026
+  - Jaejun Lee and Jocyce Jiyoung Whang, Learn When and Where to Connect: Adaptive Virtual Nodes for Dynamic Message Passing on Graphs, KDD 2026.
