@@ -1325,3 +1325,12 @@ ninja-keys::part(ninja-input-wrapper) {
 .publications .bibliography li .row {
   margin: 0;
 }
+
+h1.post-title a.float-right i.fa-file-pdf {
+  color: var(--global-theme-color) !important; /* 원하는 기본 색상 (예: 파란색) */
+}
+
+/* 마우스 올렸을 때 (Hover) */
+h1.post-title a.float-right:hover i.fa-file-pdf {
+  color: var(--global-theme-color) !important; /* 마우스 올렸을 때 색상 */
+}
