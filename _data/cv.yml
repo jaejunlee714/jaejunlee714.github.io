@@ -10,7 +10,7 @@
   type: time_table
   contents:
     - title: |
-        <a href="https://bdi-lab.kaist.ac.kr">
+        <a href="https://bdi-lab.kaist.ac.kr" style="color: var(--global-theme-color);">
           Ph.D. (Advisor&#58; Joyce Jiyoung Whang)
         </a>
       year: 2023.02-present
@@ -20,7 +20,7 @@
       - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
 
     - title: | 
-        <a href="https://bdi-lab.kaist.ac.kr">
+        <a href="https://bdi-lab.kaist.ac.kr" style="color: var(--global-theme-color);">
           M.S. (Advisor&#58; Joyce Jiyoung Whang)
         </a>
       year: 2021.08-2023.02
@@ -30,7 +30,7 @@
       - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
 
     - title: |
-        <a href="https://cs.kaist.ac.kr">
+        <a href="https://cs.kaist.ac.kr" style="color: var(--global-theme-color);">
           B.S., School of Computing
         </a>
       year: 2017.02-2021.08
