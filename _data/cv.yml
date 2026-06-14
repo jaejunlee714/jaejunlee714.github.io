@@ -55,8 +55,8 @@
 - title: Tutorials
   type: item
   contents:
-    - 'Assistant Tutor, <a href="https://bdi-lab.github.io/kkg_kdd2026/" target='_blank'>&quot;Knowledge Discovery with Knowledge Graphs&#58; From Structural Embeddings to Generative Reasoning (KnowKG)&quot;</a>, KDD 2026.'
-    - 'Assistant Tutor, <a href="https://bdi-lab.github.io/keykgrl_iswc2025/" target='_blank'>&quot;Key Facets in Modern Knowledge Graph Representation Learning (KeyKGRL)&quot;</a>, ISWC 2025.'
+    - 'Assistant Tutor, <a href="https://bdi-lab.github.io/kkg_kdd2026/" target="_blank">&quot;Knowledge Discovery with Knowledge Graphs&#58; From Structural Embeddings to Generative Reasoning (KnowKG)&quot;</a>, KDD 2026.'
+    - 'Assistant Tutor, <a href="https://bdi-lab.github.io/keykgrl_iswc2025/" target="_blank">&quot;Key Facets in Modern Knowledge Graph Representation Learning (KeyKGRL)&quot;</a>, ISWC 2025.'
 
 - title: Peer Review
   type: item
