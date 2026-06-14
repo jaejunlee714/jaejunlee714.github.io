@@ -10,6 +10,6 @@ $(document).ready(function () {
   // 2. preview 이미지는 margin을 크게 주어 확대 크기를 제한
   mediumZoom(".preview[data-zoomable]", {
     background: bgColor,
-    margin: 150, // 💡 이 값을 늘릴수록 확대 시 이미지가 작아집니다. 원하는 크기에 맞춰 조절하세요! (예: 100 ~ 300)
+    margin: 250,
   });
 });
