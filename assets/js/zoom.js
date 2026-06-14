@@ -1,1 +1,1 @@
-$(document).ready(function(){mediumZoom("[data-zoomable]",{background:getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color")+"ee",margin:100})});
+$(document).ready(function(){const e=getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color")+"ee";medium_zoom=mediumZoom("[data-zoomable]:not(.preview)",{background:e}),mediumZoom(".preview[data-zoomable]",{background:e,margin:150})});
