@@ -10,7 +10,7 @@
   type: time_table
   contents:
     - title: |
-        <a href="https://bdi-lab.kaist.ac.kr" style="color: var(--global-theme-color);">
+        <a href="https://bdi-lab.kaist.ac.kr" style="color: var(--global-theme-color);" target='_blank'>
           Ph.D. (Advisor&#58; Joyce Jiyoung Whang)
         </a>
       year: 2023.02-present
