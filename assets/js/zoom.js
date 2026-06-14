@@ -1,1 +1,1 @@
-$(document).ready(function(){const e=getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color")+"ee";medium_zoom=mediumZoom("[data-zoomable]:not(.preview)",{background:e}),mediumZoom(".preview[data-zoomable]",{background:e,margin:150})});
+$(document).ready(function(){const e=getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color")+"ee";medium_zoom=mediumZoom("[data-zoomable]:not(.preview)",{background:e}),mediumZoom(".preview[data-zoomable]",{background:e,margin:250})});
