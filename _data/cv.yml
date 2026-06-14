@@ -15,26 +15,26 @@
         </a>
       year: 2023.02-present
       maindescription:
-      - <a href="https://cs.kaist.ac.kr">School of Computing</a> <br>
-      - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
+      - <a href="https://cs.kaist.ac.kr" target='_blank'>School of Computing</a> <br>
+      - <a href="https://kaist.ac.kr" target='_blank'>Korea Advanced Institute of Science and Technology (KAIST)</a>
 
     - title: | 
-        <a href="https://bdi-lab.kaist.ac.kr" style="color: var(--global-theme-color);">
+        <a href="https://bdi-lab.kaist.ac.kr" style="color: var(--global-theme-color);" target='_blank'>
           M.S. (Advisor&#58; Joyce Jiyoung Whang)
         </a>
       year: 2021.08-2023.02
       maindescription:
-      - <a href="https://cs.kaist.ac.kr">School of Computing</a> <br>
-      - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
+      - <a href="https://cs.kaist.ac.kr" target='_blank'>School of Computing</a> <br>
+      - <a href="https://kaist.ac.kr" target='_blank'>Korea Advanced Institute of Science and Technology (KAIST)</a>
 
     - title: |
-        <a href="https://cs.kaist.ac.kr" style="color: var(--global-theme-color);">
+        <a href="https://cs.kaist.ac.kr" style="color: var(--global-theme-color);" target='_blank'>
           B.S., School of Computing
         </a>
       year: 2017.02-2021.08
       maindescription:
-      - <a href="https://mathsci.kaist.ac.kr">Double Major&#58; Department of Mathematical Sciences</a> <br>
-      - <a href="https://kaist.ac.kr">Korea Advanced Institute of Science and Technology (KAIST)</a>
+      - <a href="https://mathsci.kaist.ac.kr" target='_blank'>Double Major&#58; Department of Mathematical Sciences</a> <br>
+      - <a href="https://kaist.ac.kr" target='_blank'>Korea Advanced Institute of Science and Technology (KAIST)</a>
       
 - title: |
     Publications <p style="font-size: 0.8rem; color: var(--global-text-color-light);">
@@ -55,8 +55,8 @@
 - title: Tutorials
   type: item
   contents:
-    - 'Assistant Tutor, <a href="https://bdi-lab.github.io/kkg_kdd2026/">&quot;Knowledge Discovery with Knowledge Graphs&#58; From Structural Embeddings to Generative Reasoning (KnowKG)&quot;</a>, KDD 2026.'
-    - 'Assistant Tutor, <a href="https://bdi-lab.github.io/keykgrl_iswc2025/">&quot;Key Facets in Modern Knowledge Graph Representation Learning (KeyKGRL)&quot;</a>, ISWC 2025.'
+    - 'Assistant Tutor, <a href="https://bdi-lab.github.io/kkg_kdd2026/" target='_blank'>&quot;Knowledge Discovery with Knowledge Graphs&#58; From Structural Embeddings to Generative Reasoning (KnowKG)&quot;</a>, KDD 2026.'
+    - 'Assistant Tutor, <a href="https://bdi-lab.github.io/keykgrl_iswc2025/" target='_blank'>&quot;Key Facets in Modern Knowledge Graph Representation Learning (KeyKGRL)&quot;</a>, ISWC 2025.'
 
 - title: Peer Review
   type: item
