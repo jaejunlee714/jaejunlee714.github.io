@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Jaejun's Personal Website</title>
+  <meta name="description" content="Jaejun Lee — Ph.D. Student at School of Computing, KAIST (Big Data Intelligence Lab). Graph Machine Learning, Graph Neural Networks, and Knowledge Graph Representation Learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-page="cv" data-base="../">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="subpage-header">
+      <div class="subpage-canvas-wrap">
+        <canvas id="sub-kg-canvas" aria-hidden="true"></canvas>
+      </div>
+      <div class="container subpage-header-inner">
+        <div>
+          <h1 class="subpage-title">Curriculum Vitae</h1>
+          <p class="subpage-subtitle" id="cv-subtitle"></p>
+        </div>
+        <a class="view-all-btn" id="cv-pdf-link" href="#" target="_blank" rel="noopener noreferrer">
+          Download CV (PDF) ↗
+        </a>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="cv-grid">
+          <div class="cv-block">
+            <div>
+              <h2 class="cv-block-label">Basics</h2>
+            </div>
+            <div class="cv-basics-row" id="cv-basics"></div>
+          </div>
+
+          <div class="cv-block">
+            <div>
+              <h2 class="cv-block-label">Education</h2>
+            </div>
+            <div class="cv-items" id="cv-education"></div>
+          </div>
+
+          <div class="cv-block">
+            <div>
+              <h2 class="cv-block-label">Publications</h2>
+              <div class="cv-block-sub">† Equal contribution · * Corresponding author</div>
+            </div>
+            <div>
+              <ol class="cv-pub-list" id="cv-publications"></ol>
+            </div>
+          </div>
+
+          <div class="cv-block">
+            <div>
+              <h2 class="cv-block-label">Tutorials</h2>
+              <div class="cv-block-sub">Official tutorial websites linked</div>
+            </div>
+            <div class="cv-card-list" id="cv-tutorials"></div>
+          </div>
+
+          <div class="cv-block">
+            <div>
+              <h2 class="cv-block-label">Peer Review</h2>
+            </div>
+            <div class="cv-service-grid" id="cv-peer-review"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

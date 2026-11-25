@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaejun's Personal Website</title>
+  <meta name="description" content="Jaejun Lee — Ph.D. Student at School of Computing, KAIST (Big Data Intelligence Lab). Graph Machine Learning, Graph Neural Networks, and Knowledge Graph Representation Learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body data-page="about" data-base="./">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="hero-section">
+      <canvas id="kg-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-overlay">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <div class="hero-eyebrow" id="hero-eyebrow"></div>
+            <h1 class="hero-title" id="hero-title"></h1>
+            <div class="bio-paragraphs" id="bio-paragraphs"></div>
+            <div class="social-row" id="social-row"></div>
+          </div>
+
+          <div class="profile-col">
+            <div class="profile-frame" id="profile-frame"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="graph-controls">
+        <span class="graph-hint">Hover to explore 1-hop · Click to pass messages</span>
+        <button type="button" id="graph-toggle-btn" class="graph-toggle-btn">❚❚ Pause Graph</button>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Selected Publications</h2>
+            <div class="section-meta">† Equal contribution · * Corresponding author</div>
+          </div>
+          <a class="section-link" href="./publications/">View all publications →</a>
+        </div>
+
+        <div class="pub-list" id="selected-pub-list"></div>
+
+        <div class="view-all-row">
+          <a class="view-all-btn" href="./publications/">
+            <span>View all <span id="all-pub-count">0</span> publications</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
