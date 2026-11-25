@@ -198,7 +198,8 @@ a:hover {
 .hero-overlay {
   position: relative;
   z-index: 2;
-  padding: 64px 0 56px;
+  padding-top: 64px;
+  padding-bottom: 56px;
   pointer-events: none;
 }
 
@@ -1050,7 +1051,7 @@ main {
 
   .profile-col {
     order: -1;
-    align-items: flex-start;
+    align-items: flex-start; /* 모바일에서 사진을 가운데 정렬하려면 center로 변경 */
   }
 
   .profile-frame {
@@ -1059,9 +1060,14 @@ main {
   }
 
   .hero-overlay {
-    padding: 40px 0 48px;
+    padding-top: 40px;
+    padding-bottom: 48px;
   }
 
+  .hero-text {
+    padding: 8px 0;
+  }
+   
   .graph-hint {
     display: none;
   }
