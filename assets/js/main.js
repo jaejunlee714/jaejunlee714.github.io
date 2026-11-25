@@ -112,7 +112,6 @@
         <div class="container nav-inner">
           <a class="brand" href="${pathOf("")}">
             <span>${DATA.name}</span>
-            ${DATA.koreanName ? `<span class="brand-kr">${DATA.koreanName}</span>` : ""}
           </a>
           <div class="nav-right">
             <nav class="nav-links" aria-label="Main navigation">
