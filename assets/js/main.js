@@ -280,7 +280,7 @@
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
       const keywords = options.subtle ? [] : DATA.graphKeywords;
-      const bgCount = options.subtle ? 16 : Math.min(26, Math.max(16, Math.floor(width / 42)));
+      const bgCount = options.subtle ? 20 : Math.min(42, Math.max(24, Math.floor(width / 28)));
       nodes = [];
 
       // 1. 허브 노드(연구 키워드) 배치
@@ -381,9 +381,9 @@
         }
 
         // 4. 가까운 이웃 1~2개만 짧게 추가 연결 (자연스러운 그래프 구조, 과밀 방지)
-        const maxExtraDist = Math.min(210, Math.max(135, width * 0.2));
+        const maxExtraDist = Math.min(200, Math.max(130, width * 0.19));
         for (let i = 0; i < n; i++) {
-          const maxDeg = nodes[i].hub ? 4 : 3;
+          const maxDeg = 5;
           if (degree[i] >= maxDeg) continue;
 
           const candidates = [];
@@ -394,11 +394,16 @@
           }
           candidates.sort((a, b) => a.d - b.d);
 
+          let added = 0;
           for (const c of candidates) {
-            if (degree[i] >= maxDeg) break;
-            if (addEdge(i, c.j)) break; // 노드당 짧은 보조 엣지 최대 1개만 추가
+            if (degree[i] >= maxDeg || added >= 2) break;
+            if (addEdge(i, c.j)) added++;
           }
         }
+        for (let i = 0; i < n; i++) {
+           nodes[i].hub = degree[i] >= 5;
+           nodes[i].r = 1.9 + Math.min(degree[i], 6) * 0.42;
+         }
       }
     }
 
@@ -408,7 +413,7 @@
         node: isDark ? "rgba(148, 163, 184, 0.36)" : "rgba(75, 85, 99, 0.28)",
         hub: isDark ? "rgba(96, 165, 250, 0.65)" : "rgba(30, 58, 138, 0.48)",
         active: isDark ? "rgba(96, 165, 250, 0.95)" : "rgba(30, 58, 138, 0.88)",
-        edge: isDark ? "rgba(148, 163, 184, 0.13)" : "rgba(30, 58, 138, 0.095)",
+        edge: isDark ? "rgba(148, 163, 184, 0.10)" : "rgba(30, 58, 138, 0.075)",
         edgeActive: isDark ? "rgba(96, 165, 250, 0.48)" : "rgba(30, 58, 138, 0.36)",
         label: isDark ? "rgba(148, 163, 184, 0.52)" : "rgba(55, 65, 81, 0.44)",
         labelActive: isDark ? "rgba(191, 219, 254, 0.95)" : "rgba(30, 58, 138, 0.92)"
