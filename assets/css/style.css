@@ -578,8 +578,9 @@ main {
 
 .pub-card {
   display: grid;
-  grid-template-columns: 188px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 250px minmax(0, 1fr); 
+  gap: 24px;
+  align-items: center;                         
   padding: 20px;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
@@ -594,8 +595,8 @@ main {
 }
 
 .pub-thumb {
-  width: 188px;
-  height: 126px;
+  width: 250px;                                
+  height: 168px;                               
   border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--bg-subtle);
@@ -1072,7 +1073,7 @@ main {
 
   .pub-thumb {
     width: 100%;
-    height: 160px;
+    height: 210px;
   }
 
   .cv-block {
