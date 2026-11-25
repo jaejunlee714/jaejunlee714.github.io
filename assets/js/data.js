@@ -24,14 +24,6 @@ window.SITE_DATA = {
     'My research interests lie in graph machine learning, graph neural networks, and representation learning on knowledge graphs. I believe that the potential of graph-structured data extends well beyond its current use, and I am dedicated to exploring novel applications across a broader range of domains.'
   ],
   graphKeywords: [
-    "Knowledge Graphs",
-    "GNNs",
-    "Hyper-Relational",
-    "Inductive",
-    "Virtual Nodes",
-    "Diffusion",
-    "Multimodal",
-    "Generalization"
   ],
 
   publications: [
