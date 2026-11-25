@@ -254,7 +254,7 @@
     });
   }
 
-  /* ---------- Interactive Knowledge Graph Canvas ---------- */
+  /* ---------- Interactive Knowledge Graph Canvas (Sparse Connected) ---------- */
   function initKnowledgeGraph(canvasId, options = {}) {
     const canvas = document.getElementById(canvasId);
     if (!canvas) return;
@@ -264,6 +264,7 @@
     let height = 0;
     let dpr = Math.min(window.devicePixelRatio || 1, 2);
     let paused = false;
+    let time = 0;
     let mouse = { x: -9999, y: -9999, active: false };
     let pulses = [];
     let nodes = [];
@@ -279,46 +280,123 @@
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
       const keywords = options.subtle ? [] : DATA.graphKeywords;
-      const bgCount = options.subtle ? 20 : Math.min(34, Math.max(20, Math.floor(width / 34)));
+      const bgCount = options.subtle ? 16 : Math.min(26, Math.max(16, Math.floor(width / 42)));
       nodes = [];
 
+      // 1. 허브 노드(연구 키워드) 배치
       keywords.forEach((label, idx) => {
         const angle = (idx / keywords.length) * Math.PI * 2 + 0.35;
-        const rx = width * (width < 720 ? 0.38 : 0.42);
-        const ry = height * 0.36;
+        const rx = width * (width < 720 ? 0.36 : 0.41);
+        const ry = height * 0.35;
         const cx = width * 0.56;
         const cy = height * 0.5;
+        const bx = Math.max(48, Math.min(width - 72, cx + Math.cos(angle) * rx + (Math.random() - 0.5) * 36));
+        const by = Math.max(32, Math.min(height - 32, cy + Math.sin(angle) * ry + (Math.random() - 0.5) * 24));
         nodes.push({
-          x: Math.max(40, Math.min(width - 40, cx + Math.cos(angle) * rx + (Math.random() - 0.5) * 40)),
-          y: Math.max(28, Math.min(height - 28, cy + Math.sin(angle) * ry + (Math.random() - 0.5) * 28)),
-          vx: (Math.random() - 0.5) * 0.24,
-          vy: (Math.random() - 0.5) * 0.24,
-          r: 4.3,
+          baseX: bx,
+          baseY: by,
+          x: bx,
+          y: by,
+          ampX: 7 + Math.random() * 6,
+          ampY: 6 + Math.random() * 6,
+          speedX: 0.45 + Math.random() * 0.35,
+          speedY: 0.45 + Math.random() * 0.35,
+          phaseX: Math.random() * Math.PI * 2,
+          phaseY: Math.random() * Math.PI * 2,
+          r: 4.2,
           label,
           hub: true
         });
       });
 
+      // 2. 배경 노드 배치 (지터 그리드로 고르게 분포시켜 뭉침 방지)
+      const cols = Math.max(4, Math.round(Math.sqrt(bgCount * (width / Math.max(height, 1)))));
+      const rows = Math.max(2, Math.ceil(bgCount / cols));
+      const cellW = width / cols;
+      const cellH = height / rows;
       for (let i = 0; i < bgCount; i++) {
+        const col = i % cols;
+        const row = Math.floor(i / cols);
+        const bx = Math.max(20, Math.min(width - 20, (col + 0.2 + Math.random() * 0.6) * cellW));
+        const by = Math.max(20, Math.min(height - 20, (row + 0.2 + Math.random() * 0.6) * cellH));
         nodes.push({
-          x: Math.random() * width,
-          y: Math.random() * height,
-          vx: (Math.random() - 0.5) * 0.28,
-          vy: (Math.random() - 0.5) * 0.28,
-          r: 2 + Math.random() * 1.7,
+          baseX: bx,
+          baseY: by,
+          x: bx,
+          y: by,
+          ampX: 8 + Math.random() * 8,
+          ampY: 7 + Math.random() * 7,
+          speedX: 0.4 + Math.random() * 0.45,
+          speedY: 0.4 + Math.random() * 0.45,
+          phaseX: Math.random() * Math.PI * 2,
+          phaseY: Math.random() * Math.PI * 2,
+          r: 2.1 + Math.random() * 1.4,
           label: null,
           hub: false
         });
       }
 
+      // 3. Prim MST로 100% Connected Graph 구성 (고립 노드·분리 컴포넌트 제거)
+      const n = nodes.length;
       edges = [];
-      for (let i = 0; i < nodes.length; i++) {
-        for (let j = i + 1; j < nodes.length; j++) {
-          const dx = nodes[i].x - nodes[j].x;
-          const dy = nodes[i].y - nodes[j].y;
-          const dist = Math.hypot(dx, dy);
-          if (dist < (nodes[i].hub || nodes[j].hub ? 185 : 135) && Math.random() < 0.45) {
-            edges.push([i, j]);
+      const edgeSet = new Set();
+      const degree = new Array(n).fill(0);
+
+      function addEdge(u, v) {
+        if (u === v) return false;
+        const key = u < v ? `${u}-${v}` : `${v}-${u}`;
+        if (edgeSet.has(key)) return false;
+        edgeSet.add(key);
+        edges.push([u, v]);
+        degree[u]++;
+        degree[v]++;
+        return true;
+      }
+
+      if (n > 1) {
+        const inTree = new Array(n).fill(false);
+        const minDist = new Array(n).fill(Infinity);
+        const parent = new Array(n).fill(-1);
+        minDist[0] = 0;
+
+        for (let stepIdx = 0; stepIdx < n; stepIdx++) {
+          let u = -1;
+          for (let i = 0; i < n; i++) {
+            if (!inTree[i] && (u === -1 || minDist[i] < minDist[u])) {
+              u = i;
+            }
+          }
+          if (u === -1) break;
+          inTree[u] = true;
+          if (parent[u] !== -1) addEdge(parent[u], u);
+
+          for (let v = 0; v < n; v++) {
+            if (inTree[v]) continue;
+            const d = Math.hypot(nodes[u].baseX - nodes[v].baseX, nodes[u].baseY - nodes[v].baseY);
+            if (d < minDist[v]) {
+              minDist[v] = d;
+              parent[v] = u;
+            }
+          }
+        }
+
+        // 4. 가까운 이웃 1~2개만 짧게 추가 연결 (자연스러운 그래프 구조, 과밀 방지)
+        const maxExtraDist = Math.min(210, Math.max(135, width * 0.2));
+        for (let i = 0; i < n; i++) {
+          const maxDeg = nodes[i].hub ? 4 : 3;
+          if (degree[i] >= maxDeg) continue;
+
+          const candidates = [];
+          for (let j = 0; j < n; j++) {
+            if (i === j || degree[j] >= (nodes[j].hub ? 4 : 3)) continue;
+            const d = Math.hypot(nodes[i].baseX - nodes[j].baseX, nodes[i].baseY - nodes[j].baseY);
+            if (d < maxExtraDist) candidates.push({ j, d });
+          }
+          candidates.sort((a, b) => a.d - b.d);
+
+          for (const c of candidates) {
+            if (degree[i] >= maxDeg) break;
+            if (addEdge(i, c.j)) break; // 노드당 짧은 보조 엣지 최대 1개만 추가
           }
         }
       }
@@ -328,10 +406,10 @@
       const isDark = document.documentElement.getAttribute("data-theme") === "dark";
       return {
         node: isDark ? "rgba(148, 163, 184, 0.36)" : "rgba(75, 85, 99, 0.28)",
-        hub: isDark ? "rgba(96, 165, 250, 0.65)" : "rgba(30, 58, 138, 0.45)",
+        hub: isDark ? "rgba(96, 165, 250, 0.65)" : "rgba(30, 58, 138, 0.48)",
         active: isDark ? "rgba(96, 165, 250, 0.95)" : "rgba(30, 58, 138, 0.88)",
-        edge: isDark ? "rgba(148, 163, 184, 0.12)" : "rgba(30, 58, 138, 0.09)",
-        edgeActive: isDark ? "rgba(96, 165, 250, 0.46)" : "rgba(30, 58, 138, 0.34)",
+        edge: isDark ? "rgba(148, 163, 184, 0.13)" : "rgba(30, 58, 138, 0.095)",
+        edgeActive: isDark ? "rgba(96, 165, 250, 0.48)" : "rgba(30, 58, 138, 0.36)",
         label: isDark ? "rgba(148, 163, 184, 0.52)" : "rgba(55, 65, 81, 0.44)",
         labelActive: isDark ? "rgba(191, 219, 254, 0.95)" : "rgba(30, 58, 138, 0.92)"
       };
@@ -343,11 +421,10 @@
         ctx.clearRect(0, 0, width, height);
 
         if (!paused) {
+          time += 0.012;
           nodes.forEach((n) => {
-            n.x += n.vx;
-            n.y += n.vy;
-            if (n.x < 16 || n.x > width - 16) n.vx *= -1;
-            if (n.y < 16 || n.y > height - 16) n.vy *= -1;
+            n.x = n.baseX + Math.sin(time * n.speedX + n.phaseX) * n.ampX;
+            n.y = n.baseY + Math.cos(time * n.speedY + n.phaseY) * n.ampY;
           });
         }
 
@@ -372,17 +449,16 @@
           });
         }
 
+        // 모든 연결 엣지 유지 (거리 제한으로 끊기지 않음)
         edges.forEach(([a, b]) => {
           const na = nodes[a];
           const nb = nodes[b];
-          const d = Math.hypot(na.x - nb.x, na.y - nb.y);
-          if (d > 240) return;
           const highlighted = hoverIdx !== -1 && (a === hoverIdx || b === hoverIdx);
           ctx.beginPath();
           ctx.moveTo(na.x, na.y);
           ctx.lineTo(nb.x, nb.y);
           ctx.strokeStyle = highlighted ? c.edgeActive : c.edge;
-          ctx.lineWidth = highlighted ? 1.45 : 0.95;
+          ctx.lineWidth = highlighted ? 1.45 : 0.9;
           ctx.stroke();
         });
 
